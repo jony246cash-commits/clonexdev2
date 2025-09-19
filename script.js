@@ -47,32 +47,51 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Coletar dados do formulário
-        const formData = new FormData(this);
-        const nome = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const telefone = this.querySelector('input[type="tel"]').value;
-        const servico = this.querySelector('select').value;
-        const mensagem = this.querySelector('textarea').value;
+        // Valida todos os campos do formulário antes de prosseguir
+        const isFormValid = validateAllFields(this);
         
-        // Criar mensagem para WhatsApp
-        const whatsappMessage = `Olá! Gostaria de solicitar um orçamento:\n\n` +
-            `Nome: ${nome}\n` +
-            `E-mail: ${email}\n` +
-            `Telefone: ${telefone}\n` +
-            `Serviço: ${servico}\n` +
-            `Descrição: ${mensagem}`;
-        
-        // Redirecionar para WhatsApp
-        const whatsappUrl = `https://wa.me/5569992565019?text=${encodeURIComponent(whatsappMessage)}`;
-        window.open(whatsappUrl, '_blank');
-        
-        // Mostrar mensagem de sucesso
-        showSuccessMessage();
-        
-        // Limpar formulário
-        this.reset();
+        if (isFormValid) {
+            // Coletar dados do formulário
+            const formData = new FormData(this);
+            const nome = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const telefone = this.querySelector('input[type="tel"]').value;
+            const servico = this.querySelector('select').value;
+            const mensagem = this.querySelector('textarea').value;
+            
+            // Criar mensagem para WhatsApp
+            const whatsappMessage = `Olá! Gostaria de solicitar um orçamento:\n\n` +
+                `Nome: ${nome}\n` +
+                `E-mail: ${email}\n` +
+                `Telefone: ${telefone}\n` +
+                `Serviço: ${servico}\n` +
+                `Descrição: ${mensagem}`;
+            
+            // Redirecionar para WhatsApp
+            const whatsappUrl = `https://wa.me/5569992565019?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Mostrar mensagem de sucesso
+            showSuccessMessage();
+            
+            // Limpar formulário
+            this.reset();
+        } else {
+            console.log('O formulário contém erros e não será enviado.');
+        }
     });
+}
+
+// Nova função para validar todos os campos
+function validateAllFields(form) {
+    const fields = form.querySelectorAll('input, textarea, select');
+    let allValid = true;
+    fields.forEach(field => {
+        if (!validateField(field)) {
+            allValid = false;
+        }
+    });
+    return allValid;
 }
 
 // Função para mostrar mensagem de sucesso
