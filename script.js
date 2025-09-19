@@ -64,7 +64,7 @@ if (contactForm) {
             `Descrição: ${mensagem}`;
         
         // Redirecionar para WhatsApp
-        const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappUrl = `https://wa.me/5569992565019?text=${encodeURIComponent(whatsappMessage)}`;
         window.open(whatsappUrl, '_blank');
         
         // Mostrar mensagem de sucesso
