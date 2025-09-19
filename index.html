@@ -1,90 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CLONEX Desenvolvimento</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VictorArts - Pinturas Residenciais Profissionais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header><link rel="stylesheet" href="style.css">
-    <div class="container">
-      <h1>CLONEX DESENVOLVIMENTO</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="imagens/LOGOS/Captura de tela 2025-09-18 213333.png" alt="VictorArts - Pinturas Residenciais de Qualidade" class="logo-img">
+                    <span class="logo-text">VICTOR<span class="arts-header">ARTS</span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section id="inicio" class="hero">
-    <div class="container">
-      <h2>Sites que impactam, presença que vende.</h2>
-      <p>Transformamos ideias em sites profissionais para empresas e microempreendedores.</p>
-    </div>
-  </section>
+    <!-- Banner Principal -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>VICTOR<span class="arts-hero">ARTS</span></h1>
+                <h2>Pinturas Residenciais de Excelência</h2>
+                <p>Transformamos sua casa com qualidade profissional e acabamento impecável</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="#gallery" class="btn btn-secondary">Ver Projetos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="imagens/IMAGENS DE FUNDO/istockphoto-468842398-612x612.jpg" alt="Casa com pintura profissional">
+        </div>
+    </section>
 
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre a CLONEX</h2>
-      <p>Somos uma equipe apaixonada por tecnologia e design. Criamos sites modernos e personalizados para atender às necessidades de cada cliente, com foco em funcionalidade, estética e performance. Atendemos pequenas empresas e agências que buscam presença digital com estilo e resultado.</p>
-    </div>
-  </section>
 
-  <section id="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
-      <ul>
-        <li>🔧 Desenvolvimento de sites institucionais</li>
-        <li>🎨 Criação de portfólios profissionais</li>
-        <li>⚙️ Parcerias com agências de marketing</li>
-      </ul>
-    </div>
-  </section>
 
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfólio</h2>
-      <div class="projetos-grid">
-        <a href="se7e-assessoria-projeto.html" class="projeto-card">
-          <div class="projeto-conteudo">
-            <h3>SE7E Assessoria e Cerimonial</h3>
-            <p>Desenvolvimento de um site institucional focado em uma experiência mobile, com funcionalidades de contato e agendamento.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Sobre Nós -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a VICTOR<span class="arts-section">ARTS</span></h2>
+                <p>Excelência em pinturas residenciais há mais de 10 anos</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>Na VictorArts, nossa missão é transformar residências através de pinturas de alta qualidade, utilizando as melhores técnicas e materiais do mercado. Nosso compromisso é com a excelência, pontualidade e satisfação total de nossos clientes.</p>
+                    
+                    <h3>Por que nos escolher?</h3>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check"></i> Mais de 10 anos de experiência</li>
+                        <li><i class="fas fa-check"></i> Materiais de primeira qualidade</li>
+                        <li><i class="fas fa-check"></i> Equipe especializada e treinada</li>
+                        <li><i class="fas fa-check"></i> Garantia em todos os serviços</li>
+                        <li><i class="fas fa-check"></i> Orçamento gratuito e sem compromisso</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="imagens/IMAGENS DE FUNDO/11345768-um-pintor-esta-escolhendo-um-tom-de-tinta-para-o-interior-das-paredes-da-casa-com-interior-foto.jpg" alt="Profissional pintando">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contato">
-    <div class="container">
-      <h2>Entre em Contato</h2>
-      <p>Quer um site profissional para sua marca? Chama a CLONEX!</p>
-      <p>📧 contato@clonex.com.br</p>
-      <div class="social-buttons">
-        <a href="https://www.instagram.com/mrclonex315?igsh=Y284a2x4emF0Mng5" target="_blank" class="social-btn instagram-btn">
-          <img src="logos/instagram logo.png" alt="Instagram" class="social-icon">
-          <span>Instagram</span>
-        </a>
-        <a href="https://wa.me/5569992720204" target="_blank" class="social-btn whatsapp-btn">
-          <img src="logos/WhatsApp_Logo_PNG_Transparente.png" alt="WhatsApp" class="social-icon">
-          <span>WhatsApp</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Nossos Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em pintura residencial</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Pintura de Interiores</h3>
+                    <p>Transforme o ambiente interno da sua casa com cores e acabamentos que refletem seu estilo pessoal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Pintura de Exteriores</h3>
+                    <p>Proteja e embeleze a fachada da sua residência com tintas resistentes às intempéries.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Acabamentos Especiais</h3>
+                    <p>Texturas, efeitos decorativos e técnicas especiais para um resultado único e sofisticado.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Reformas e Reparos</h3>
+                    <p>Preparação de superfícies, correção de imperfeições e pequenos reparos antes da pintura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <img src="logos/Logo de Tecnologia CLONEX.png" alt="Minha Logo"class="logo-footer" width="100">
-      <p>&copy; 2025 CLONEX Desenvolvimento. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <!-- Solicite seu Orçamento -->
+    <section id="quote" class="quote">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solicite seu Orçamento</h2>
+                <p>Preencha o formulário e receba uma proposta personalizada</p>
+            </div>
+            <div class="quote-content">
+                <form class="quote-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Seu telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Tipo de serviço</option>
+                            <option value="interior">Pintura Interior</option>
+                            <option value="exterior">Pintura Exterior</option>
+                            <option value="acabamentos">Acabamentos Especiais</option>
+                            <option value="reforma">Reforma Completa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Descreva seu projeto" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Projetos -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria de Projetos</h2>
+                <p>Veja alguns dos nossos trabalhos realizados</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="imagens/GALERIA/93a51b05-df8c-43b5-a4cf-e46d33936cfd.jpg" alt="Projeto 1">
+                    <div class="gallery-overlay">
+                        <h4>Arte Especial</h4>
+                        <p>Trabalho personalizado</p>
+                        <button class="view-btn">👁️</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="imagens/GALERIA/a46c5c19-2e36-43ba-8325-d1a26038763d.jpg" alt="Projeto 2">
+                    <div class="gallery-overlay">
+                        <h4>Criação Única</h4>
+                        <p>Design exclusivo</p>
+                        <button class="view-btn">👁️</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <video src="imagens/GALERIA/WhatsApp%20Video%202025-09-15%20at%2019.20.19.mp4" muted loop preload="metadata"></video>
+                    <div class="gallery-overlay">
+                        <h4>Processo Criativo</h4>
+                        <p>Vídeo do processo</p>
+                        <button class="view-btn">👁️</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <video src="imagens/GALERIA/WhatsApp%20Video%202025-09-15%20at%2019.21.22.mp4" muted loop preload="metadata"></video>
+                    <div class="gallery-overlay">
+                        <h4>Técnica Avançada</h4>
+                        <p>Demonstração prática</p>
+                        <button class="view-btn">👁️</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <video src="imagens/GALERIA/WhatsApp%20Video%202025-09-15%20at%2019.23.48.mp4" muted loop preload="metadata"></video>
+                    <div class="gallery-overlay">
+                        <h4>Resultado Final</h4>
+                        <p>Trabalho concluído</p>
+                        <button class="view-btn">👁️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal da Galeria -->
+            <div id="galleryModal" class="gallery-modal">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+                    
+                    <div class="modal-media-container">
+                        <img id="modalImage" src="" alt="" style="display: none;">
+                        <video id="modalVideo" controls style="display: none;">
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                        <div class="modal-counter">
+                            <span id="modalCounter"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para transformar seu projeto em realidade</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <p>(11) 99999-9999</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>E-mail</h4>
+                                    <p>contato@victorarts.com.br</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <p>São Paulo - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Redes Sociais</h3>
+                        <p>Siga-nos e veja nossos trabalhos</p>
+                        <div class="social-links">
+                            <a href="https://wa.me/5511999999999" target="_blank" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://instagram.com/victorarts" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VICTOR<span class="arts-footer">ARTS</span></h3>
+                    <p>Pinturas residenciais de excelência com qualidade profissional e acabamento impecável.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Pintura de Interiores</li>
+                        <li>Pintura de Exteriores</li>
+                        <li>Acabamentos Especiais</li>
+                        <li>Reformas e Reparos</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Telefone: (11) 99999-9999</p>
+                    <p>E-mail: contato@victorarts.com.br</p>
+                    <p>São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VICTOR<span class="arts-footer">ARTS</span>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
