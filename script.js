@@ -42,7 +42,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Formulário de contato
-const contactForm = document.querySelector('.contact-form form');
+const contactForm = document.querySelector('.quote-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
